@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-feature android:name="android.hardware.vr.headtracking" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:allowBackup="false" android:label="GTA5 VR Cloud Prototype"
+        android:theme="@android:style/Theme.Material.NoActionBar" android:usesCleartextTraffic="false">
+        <activity android:name=".MainActivity" android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="com.oculus.intent.category.VR" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
